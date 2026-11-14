@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Gwen Sharp</title>
-<meta name="description" content="Interactive projects by Gwen Sharp on data, society, and how we measure things.">
+<meta name="description" content="Free interactive projects by Gwen Sharp on data, society, and the gap between what we believe and what the numbers show.">
 <meta name="author" content="Gwen Sharp">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://gsharpokie.github.io/">
@@ -33,13 +33,15 @@ h1 span{color:var(--accent)}
 .intro{font-size:clamp(18px,2.2vw,21px);max-width:52ch;margin:0}
 .intro.sub{margin-top:10px;color:var(--muted);font-size:clamp(16px,1.9vw,18px)}
 .links{display:flex;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:15px;color:var(--muted)}
-h2{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:56px 0 14px;padding-bottom:10px;border-bottom:1px solid var(--line)}
-.projects{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr));gap:18px}
-.card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;text-decoration:none;transition:border-color .2s,transform .2s}
+h2{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:52px 0 14px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.projects{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,290px),1fr));gap:18px}
+.groupnote{margin:-6px 0 16px;color:var(--muted);font-size:15px}
+.card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;text-decoration:none;transition:border-color .2s,transform .2s}
 .card:hover{border-color:var(--muted);transform:translateY(-2px)}
 .card img{display:block;width:100%;height:auto;aspect-ratio:1200/630;border-bottom:1px solid var(--line);background:var(--bg)}
-.card .txt{padding:16px 18px 18px}
-.card h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:28px;line-height:1;margin:0 0 6px}
+.card .txt{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.card .go{margin-top:auto!important;padding-top:10px}
+.card h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:26px;line-height:1;margin:0 0 6px;text-wrap:balance}
 .card p{margin:0;color:var(--muted);font-size:15px}
 .card .go{display:inline-block;margin-top:10px;font-weight:600;font-size:15px;color:var(--ink)}
 .soon{border:1px dashed var(--line);border-radius:10px;display:grid;place-items:center;min-height:200px;color:var(--muted);font-size:15px;padding:20px;text-align:center}
@@ -57,27 +59,131 @@ footer{margin-top:64px;padding-top:14px;border-top:1px solid var(--line);font-si
     <div class="links"><a href="https://x.com/gsharpokie" target="_blank" rel="noopener">@gsharpokie on X</a><a href="https://github.com/gsharpokie" target="_blank" rel="noopener">GitHub</a></div>
   </header>
 
-  <h2>Projects</h2>
+  <h2>Perception and reality</h2>
+  <p class="groupnote">How close is what we believe to what the data show?</p>
   <div class="projects">
-    <a class="card" href="/equal-on-what/">
-      <img src="/equal-on-what/preview.png" alt="Equal on What? Tug-of-war rows showing whether women or men fare better on several measures." width="1200" height="630">
-      <div class="txt">
-        <h3>Equal on What?</h3>
-        <p>Who fares better, women or men? It depends on what you measure. Reveal 30+ U.S. measures, compare 1980 with today, and weight what matters to you.</p>
-        <span class="go">Open the interactive →</span>
-      </div>
-    </a>
     <a class="card" href="/better-or-worse/">
-      <img src="/better-or-worse/preview.png" alt="Better or Worse? Cards showing U.S. trends since 1980 marked better or worse." width="1200" height="630">
+      <img src="/better-or-worse/preview.png" alt="Better or Worse? Cards showing U.S. trends since 1980 marked better or worse." width="1200" height="630" loading="lazy">
       <div class="txt">
         <h3>Better or Worse?</h3>
         <p>Since 1980, has life in the U.S. gotten better or worse? Guess on 26 indicators, then see what the data show, and whether your misses leaned pessimistic.</p>
         <span class="go">Play it →</span>
       </div>
     </a>
+    <a class="card" href="/politicalbeliefs/">
+      <img src="/politicalbeliefs/preview.png" alt="What Do They Really Think? A chart comparing what Republicans actually believe with what Democrats guessed." width="1200" height="630" loading="lazy">
+      <div class="txt">
+        <h3>What Do They Really Think?</h3>
+        <p>Guess what Democrats and Republicans believe and who’s in each party, then compare your guesses with survey data and with what each side guessed about the other.</p>
+        <span class="go">Play it →</span>
+      </div>
+    </a>
+    <a class="card" href="/crime/">
+      <img src="/crime/preview.png" alt="Is Crime Up? Charts of how many Americans say crime is rising compared with the violent victimization rate." width="1200" height="630" loading="lazy">
+      <div class="txt">
+        <h3>Is Crime Up?</h3>
+        <p>Most years, most Americans say crime is rising. Make three guesses, then compare 35 years of Gallup polls with what victimization surveys found.</p>
+        <span class="go">Play it →</span>
+      </div>
+    </a>
+    <a class="card" href="/immigrantshare/">
+      <img src="/immigrantshare/preview.png" alt="Guess the Share: grids of 100 dots comparing a guess, the actual share of immigrants, and Americans’ average guess." width="1200" height="630" loading="lazy">
+      <div class="txt">
+        <h3>Guess the Share</h3>
+        <p>Out of every 100 people in the U.S., how many are immigrants? Make five guesses, see each answer as 100 people, and compare with what most Americans guess.</p>
+        <span class="go">Play it →</span>
+      </div>
+    </a>
+    <a class="card" href="/wealthdistribution/">
+      <img src="/wealthdistribution/preview.png" alt="Who Has the Wealth? A bar showing how $100 of U.S. wealth is divided among 100 households." width="1200" height="630" loading="lazy">
+      <div class="txt">
+        <h3>Who Has the Wealth?</h3>
+        <p>Imagine the U.S. as 100 households sharing $100. Divide it the way you think wealth is divided, then see the Federal Reserve’s numbers.</p>
+        <span class="go">Try it →</span>
+      </div>
+    </a>
   </div>
 
-  <footer>© 2026 Gwen Sharp. Projects are licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a> unless noted.</footer>
+  <h2>Gender, race, and identity</h2>
+  <p class="groupnote">Who counts as what, and who decides?</p>
+  <div class="projects">
+    <a class="card" href="/equal-on-what/">
+      <img src="/equal-on-what/preview.png" alt="Equal on What? Tug-of-war rows showing whether women or men fare better on several measures." width="1200" height="630" loading="lazy">
+      <div class="txt">
+        <h3>Equal on What?</h3>
+        <p>Who fares better, women or men? It depends on what you measure. Reveal 30+ U.S. measures, compare 1980 with today, and weight what matters to you.</p>
+        <span class="go">Open the interactive →</span>
+      </div>
+    </a>
+    <a class="card" href="/whocountsaswhat/">
+      <img src="/whocountsaswhat/preview.png" alt="Who Counts as What? The 1930 census race categories shown as form checkboxes." width="1200" height="630" loading="lazy">
+      <div class="txt">
+        <h3>Who Counts as What?</h3>
+        <p>Every U.S. census since 1790 has asked about race, and the choices kept changing. Click through 230 years of categories and follow one person across them.</p>
+        <span class="go">Explore it →</span>
+      </div>
+    </a>
+    <a class="card" href="/gendermap/">
+      <img src="/img/gendermap.png" alt="Cultural Variation in Gender: a world map with colored pins for each case." width="1200" height="630" loading="lazy">
+      <div class="txt">
+        <h3>Cultural Variation in Gender</h3>
+        <p>An interactive map of how societies past and present, including the U.S. and Europe, have organized sex and gender, with sources for every place.</p>
+        <span class="go">Open the map →</span>
+      </div>
+    </a>
+  </div>
+
+  <h2>Culture and social change</h2>
+  <p class="groupnote">How norms, tastes, and lives shift over time.</p>
+  <div class="projects">
+    <a class="card" href="/babynames/">
+      <img src="/babynames/preview.png" alt="Names in Fashion: a chart of how Linda, Jennifer and Jason rose and fell in popularity." width="1200" height="630" loading="lazy">
+      <div class="txt">
+        <h3>Names in Fashion</h3>
+        <p>No one sells baby names, yet they go in and out of style. Chart any name’s popularity in the U.S. from 1880 to 2025.</p>
+        <span class="go">Look up a name →</span>
+      </div>
+    </a>
+    <a class="card" href="/causesofdeath/">
+      <img src="/causesofdeath/preview.png" alt="What Killed Us, Then and Now: the ten leading causes of death in 1900 and 2024." width="1200" height="630" loading="lazy">
+      <div class="txt">
+        <h3>What Killed Us, Then and Now</h3>
+        <p>In 1900 the top killers were infections. Make three guesses, then compare the ten leading causes of death in 1900 and 2024.</p>
+        <span class="go">Play it →</span>
+      </div>
+    </a>
+    <a class="card" href="/normsort/">
+      <img src="/normsort/preview.png" alt="Folkway, More, or Taboo? A behavior card with three choices." width="1200" height="630" loading="lazy">
+      <div class="txt">
+        <h3>Folkway, More, or Taboo?</h3>
+        <p>Sort 16 behaviors by how strongly people react when someone breaks the rule. Some are easy; some depend on where and when you live.</p>
+        <span class="go">Start sorting →</span>
+      </div>
+    </a>
+  </div>
+
+  <h2>Reading data</h2>
+  <p class="groupnote">Tools for thinking about where numbers come from.</p>
+  <div class="projects">
+    <a class="card" href="/samplingsim/">
+      <img src="/samplingsim/preview.png" alt="How Many Do You Need to Ask? Dots showing results of many samples clustering around the true answer." width="1200" height="630" loading="lazy">
+      <div class="txt">
+        <h3>How Many Do You Need to Ask?</h3>
+        <p>Survey an imaginary campus. See how sample size changes your answer, and why a huge sample of the wrong people is still wrong.</p>
+        <span class="go">Run a survey →</span>
+      </div>
+    </a>
+    <a class="card" href="/misleadingcharts/">
+      <img src="/misleadingcharts/preview.png" alt="Spot the Misleading Chart: the same numbers drawn two ways." width="1200" height="630" loading="lazy">
+      <div class="txt">
+        <h3>Spot the Misleading Chart</h3>
+        <p>Six charts made from real numbers, each drawn to mislead. Find the trick, then see the same data drawn honestly.</p>
+        <span class="go">Find the tricks →</span>
+      </div>
+    </a>
+  </div>
+
+  <footer>© 2026 Gwen Sharp. Projects are licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>, except Cultural Variation in Gender, which is <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. Map image © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors.</footer>
 </div>
 </body>
 </html>
