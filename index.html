@@ -50,6 +50,9 @@ footer{margin-top:64px;padding-top:14px;border-top:1px solid var(--line);font-si
 
 /* Main landmark for screen readers; keeps the same spacing as before. */
 .wrap-main { display: block; }
+.a11y p,.a11y li{font-size:15px;line-height:1.6;max-width:46rem}
+.a11y ul{padding-left:1.2rem;margin:0 0 12px}
+.a11y p{margin:0 0 12px}
 </style>
 </head>
 <body>
@@ -211,6 +214,17 @@ footer{margin-top:64px;padding-top:14px;border-top:1px solid var(--line);font-si
     </a>
   </div>
 
+  <section class="a11y" aria-labelledby="a11y">
+    <h2 id="a11y">Accessibility</h2>
+    <p>I want these sites to work for everyone, including people who use screen readers, keyboards, or screen magnification. They aim to meet <a href="https://www.w3.org/TR/WCAG21/" target="_blank" rel="noopener">WCAG 2.1</a> Level AA.</p>
+    <ul>
+      <li>All buttons, sliders, and links can be reached and used with a keyboard, and show a visible outline when selected.</li>
+      <li>Charts have text descriptions, and many also have a data table or a slider that reads out each value. The map has a searchable list of every place.</li>
+      <li>Text meets WCAG AA color contrast standards.</li>
+      <li>Pages fit narrow phone screens without sideways scrolling.</li>
+    </ul>
+    <p>I checked the sites in November 2026 with automated accessibility testing plus keyboard and small-screen checks. They haven’t yet been tested by people who use screen readers every day, so there may be problems I haven’t caught. If something doesn’t work for you, please let me know through the “Suggest a correction” link on any project page.</p>
+  </section>
   </main>
   <footer>© 2026 Gwen Sharp. Projects are licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>, except Cultural Variation in Gender, which is <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. Map image © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors.</footer>
 </div>
